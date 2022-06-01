@@ -18,13 +18,11 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-
 - task: JFrogDocker@1
   inputs:
     command: 'Pull'
     artifactoryConnection: 'jfrogv2 arti'
     imageName: 'ecosysjfrog.jfrog.io/docker-virtual/redhat/ubi8-micro:latest'
-
 
 - task: JFrogDocker@1
   inputs:
