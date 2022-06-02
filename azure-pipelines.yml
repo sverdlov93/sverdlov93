@@ -35,7 +35,7 @@ steps:
 - task: JFrogDocker@1
   inputs:
     command: 'Custom'
-    customCommandAndArgs: 'docker images'
+    customCommandAndArgs: 'images'
     skipLogin: false
 
 - task: JFrogDocker@1
