@@ -33,6 +33,7 @@ steps:
     threads: '3'
     skipLogin: false
 
+
 - task: JFrogDocker@1
   inputs:
     command: 'Scan'
