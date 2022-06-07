@@ -32,11 +32,6 @@ steps:
     allowFailBuild: true
     threads: '3'
     skipLogin: false
-- task: JFrogDocker@1
-  inputs:
-    command: 'Custom'
-    customCommandAndArgs: 'images'
-    skipLogin: false
 
 - task: JFrogDocker@1
   inputs:
