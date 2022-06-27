@@ -1,5 +1,5 @@
 # JFrog CLI
-![Docker pulls](https://img.shields.io/chocolatey/dt/jfrog-cli?color=blue&label=Choco%20v1?&logo=Chocolatey&style=for-the-badge)
+![Docker pulls](https://img.shields.io/chocolatey/dt/jfrog-cli?color=blue&label=Choco%20v1&logo=Chocolatey&style=for-the-badge)
 ![Docker pulls](https://img.shields.io/chocolatey/dt/jfrog-cli-v2-jf?color=blue&label=Choco%20v2&logo=Chocolatey&style=for-the-badge)
 
 ![Docker pulls](https://img.shields.io/npm/dt/jfrog-cli-v2?color=blue&label=npm%20v2&logo=npm&style=for-the-badge)
