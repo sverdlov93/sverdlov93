@@ -1,6 +1,17 @@
-# JFrog EcoSystem
-Installs Count:
+# JFrog CLI
+![Docker pulls](https://img.shields.io/chocolatey/dt/jfrog-cli?color=blue&label=Choco%20v1&style=for-the-badge)
 
+![Docker pulls](https://img.shields.io/chocolatey/dt/jfrog-cli-v2-jf?color=blue&label=Choco%20v2&style=for-the-badge)
+
+![Docker pulls](https://img.shields.io/npm/dt/jfrog-cli-v2?color=blue&label=npm%20v2&style=for-the-badge)
+
+![Docker pulls](https://img.shields.io/npm/dt/jfrog-cli-go?color=blue&label=npm%20V1&style=for-the-badge)
+
+![Docker pulls](https://img.shields.io/npm/dt/jfrog-cli-v2-jf?color=blue&label=npm%20v2&style=for-the-badge)
+
+![Docker pulls](https://img.shields.io/homebrew/installs/dy/jfrog-cli?color=blue&label=Brew%20v2&style=for-the-badge)
+
+# JFrog Extensions
 ![Docker pulls](https://img.shields.io/docker/pulls/jfrog/jfrog-docker-desktop-extension?label=Docker%20Desktop&style=for-the-badge)
 
 ![JFrog Extension Marketplace Installs](https://img.shields.io/jetbrains/plugin/d/9834-jfrog?label=IDEA%20IntelliJ&color=blue&style=for-the-badge)
