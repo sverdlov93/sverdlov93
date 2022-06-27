@@ -1,4 +1,5 @@
-# JFrog Extension Installs Count
+# JFrog EcoSystem
+Installs Count:
 
 ![Docker pulls](https://img.shields.io/docker/pulls/jfrog/jfrog-docker-desktop-extension?label=Docker%20Desktop&style=for-the-badge)
 
