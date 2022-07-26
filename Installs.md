@@ -26,3 +26,5 @@
   
 ![Eclipse](https://img.shields.io/eclipse-marketplace/dt/jfrog-eclipse-plugin?label=Eclipse%20plugin&color=blue&logo=Eclipse%20IDE&style=for-the-badge)
 ![Eclipse theia](https://img.shields.io/open-vsx/dt/JFrog/jfrog-vscode-extension?label=Eclipse%20Theia&color=blue&logo=Eclipse%20IDE&style=for-the-badge)
+
+![Bitbucket Setup Cli](https://img.shields.io/docker/pulls/jfrogecosystem/jfrog-setup-cli?label=Bitbucket%20Setup%20Cli&logo=bitbucket&style=for-the-badge)
