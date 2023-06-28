@@ -15,13 +15,15 @@ steps:
   inputs:
     gradleBuildFile: 'build.gradle'
     tasks: 'artifactoryPublish'
-
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.11'
+    
 - task: JFrogGradle@1
   inputs:
     gradleBuildFile: 'build.gradle'
     tasks: 'artifactoryPublish'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.11'
+
+
     
 - task: JFrogMaven@1
   inputs:
