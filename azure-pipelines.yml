@@ -57,13 +57,3 @@ steps:
     allowFailBuild: true
     threads: '3'
     skipLogin: false
-
-
-- task: JFrogDocker@1
-  inputs:
-    command: 'Scan'
-    xrayConnection: 'jfrog xray token'
-    imageName: 'ecosysjfrog.jfrog.io/docker-virtual/redhat/ubi8-micro:latest'
-    watchesSource: 'watches'
-    watches: 'dasdsa'
-    allowFailBuild: true
