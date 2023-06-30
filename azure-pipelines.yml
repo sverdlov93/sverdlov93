@@ -11,6 +11,11 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+
+- task: JFrogGradle@1
+  inputs:
+    gradleBuildFile: 'build.gradle'
+    tasks: 'artifactoryPublish'
 - task: JFrogGradle@1
   inputs:
     gradleBuildFile: 'build.gradle'
@@ -18,10 +23,6 @@ steps:
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.11'
     
-- task: JFrogGradle@1
-  inputs:
-    gradleBuildFile: 'build.gradle'
-    tasks: 'artifactoryPublish'
 
 
     
