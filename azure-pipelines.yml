@@ -11,7 +11,13 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-
+- task: JFrogConan@1
+  inputs:
+    conanCommand: 'Add Remote'
+    remoteName: 'sdfs'
+    artifactoryConnection: 'jfrog v2 extension ecosys'
+    conanRepo: 'ado-extension-test-repo1-1687937455'
+    purgeExistingRemotes: false
 - task: JFrogGradle@1
   inputs:
     gradleBuildFile: 'build.gradle'
