@@ -11,13 +11,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: JFrogConan@1
-  inputs:
-    conanCommand: 'Add Remote'
-    remoteName: 'asdasdasd'
-    artifactoryConnection: 'RT basic auth'
-    conanRepo: 'saraTestingConan'
-    purgeExistingRemotes: false
+
 - task: JFrogGradle@1
   inputs:
     gradleBuildFile: 'build.gradle'
