@@ -16,12 +16,15 @@ steps:
   inputs:
     gradleBuildFile: 'build.gradle'
     tasks: 'artifactoryPublish'
-- task: JFrogGradle@1
-  inputs:
-    gradleBuildFile: 'build.gradle'
-    tasks: 'artifactoryPublish'
+    artifactoryResolverService: 'jfrog v2 extension ecosys'
+    sourceRepo: 'default-gradle-virtual'
+    artifactoryDeployerService: 'jfrog v2 extension ecosys'
+    targetRepo: 'default-gradle-local'
+    collectBuildInfo: true
+    buildName: '$(Build.DefinitionName)'
+    buildNumber: '$(Build.BuildNumber)'
+    includeEnvVars: true
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.11'
     
 
 
