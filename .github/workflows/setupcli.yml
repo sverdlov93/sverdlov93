@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v3
         
       - name: Setup JFrog CLI        
-        uses: jfrog/setup-jfrog-cli@latest
+        uses: jfrog/setup-jfrog-cli@v3
         env:
           JFROG_CLI_LOG_LEVEL: DEBUG
           JF_URL: https://ecosysjfrog.jfrog.io/
