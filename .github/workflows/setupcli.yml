@@ -7,6 +7,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Setup JFrog CLI        
+        uses: jfrog/setup-jfrog-cli@v3
+        env:
+          JFROG_CLI_LOG_LEVEL: DEBUG
+          JF_URL: https://artifactory.tools.aaaaa.com/
+          JF_USER: xxxxxxx
+          JF_ACCESS_TOKEN: yyyyyyy
+        with:
+          download-repository: generic-jfrog-cli-remote
+          version: latest
+          
       - name: Setup JFrog CLI
         uses: jfrog/setup-jfrog-cli@v3
         env:
