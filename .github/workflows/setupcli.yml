@@ -9,14 +9,14 @@ jobs:
         uses: actions/checkout@v3
         
       - name: Setup JFrog CLI        
-        uses: jfrog/setup-jfrog-cli@v3
+        uses: jfrog/setup-jfrog-cli@latest
         env:
           JFROG_CLI_LOG_LEVEL: DEBUG
           JF_URL: https://ecosysjfrog.jfrog.io/
           JF_USER: xxxxxxx
           JF_ACCESS_TOKEN: yyyyyyy
         with:
-          download-repository: generic-jfrog-cli-remote
+          download-repository: jfrog-cli-remote
           version: latest
           
       - name: Setup JFrog CLI
