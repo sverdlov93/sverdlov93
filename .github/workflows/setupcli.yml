@@ -7,11 +7,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        
       - name: Setup JFrog CLI        
         uses: jfrog/setup-jfrog-cli@v3
         env:
           JFROG_CLI_LOG_LEVEL: DEBUG
-          JF_URL: https://artifactory.tools.aaaaa.com/
+          JF_URL: https://ecosysjfrog.jfrog.io/
           JF_USER: xxxxxxx
           JF_ACCESS_TOKEN: yyyyyyy
         with:
