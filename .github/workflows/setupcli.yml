@@ -1,8 +1,6 @@
 name: "JFrog CLI Example"
 on: push
 
-env:
-  JF_URL: https://ecosysjfrog.jfrog.io/
   
 jobs:
   build:
@@ -15,7 +13,7 @@ jobs:
         uses: jfrog/setup-jfrog-cli@v4
         env:
           JFROG_CLI_LOG_LEVEL: DEBUG
-          JF_URL: ${{ env.JF_USER }} 
+          JF_URL: ${{ vars.JF_USER }} 
           JF_USER: ${{ secrets.JF_USER }}
           JF_PASSWORD: ${{ secrets.JF_PASSWORD }}
           # JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
