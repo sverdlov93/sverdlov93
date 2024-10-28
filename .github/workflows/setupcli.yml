@@ -21,5 +21,3 @@ jobs:
         run: |
           # Ping the server
           jf rt ping
-          # Collect environment variables for the build
-          jf c show    
