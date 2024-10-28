@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Setup JFrog CLI        
-        uses: ./.github/composite/action.yml
+        uses: ./.github/composite@main
         env:
           JFROG_CLI_LOG_LEVEL: DEBUG
           artifactory-url: ${{ vars.JF_URL }} 
