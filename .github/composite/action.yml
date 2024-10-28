@@ -20,6 +20,7 @@ runs:
         JF_USER: ${{ inputs.artifactory-user }}
         JF_PASSWORD: ${{ inputs.artifactory-api-key }}
     - name: Run JFrog CLI
+      shell: bash
       run: |
         # Ping the server
         jf rt ping
