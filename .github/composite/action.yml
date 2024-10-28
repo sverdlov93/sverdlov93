@@ -10,8 +10,6 @@ inputs:
   artifactory-url:
     required: false
     description: "URL Artifactory server"
-    default: "https://artifacts.server.com"
-
 runs:
   using: "composite"
   steps:
