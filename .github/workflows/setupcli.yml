@@ -12,7 +12,6 @@ jobs:
       - name: Setup JFrog CLI        
         uses: ./.github/composite
         with:
-          JFROG_CLI_LOG_LEVEL: DEBUG
           artifactory-url: ${{ vars.JF_URL }} 
           artifactory-user: ${{ secrets.JF_USER }}
           artifactory-api-key: ${{ secrets.JF_PASSWORD }}
