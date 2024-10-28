@@ -15,3 +15,11 @@ jobs:
           artifactory-url: ${{ vars.JF_URL }} 
           artifactory-user: ${{ secrets.JF_USER }}
           artifactory-api-key: ${{ secrets.JF_PASSWORD }}
+
+      - name: Run JFrog CLI
+        shell: bash
+        run: |
+          # Ping the server
+          jf rt ping
+          # Collect environment variables for the build
+          jf c show    
