@@ -1,0 +1,23 @@
+name: "Compisite test"
+description: "Artifactory"
+inputs:
+  artifactory-user:
+    required: true
+    description: "Secret: username for Artifactory server."
+  artifactory-api-key:
+    required: true
+    description: "Secret: artifactory-api-key for API Artifactory"
+  artifactory-url:
+    required: false
+    description: "URL Artifactory server"
+    default: "https://artifacts.server.com"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Setup JFrog CLI
+      uses: jfrog/setup-jfrog-cli@v4
+      env:
+        JF_URL: ${{ inputs.artifactory-url }}
+        JF_USER: ${{ inputs.artifactory-user }}
+        JF_PASSWORD: ${{ inputs.artifactory-api-key }}
