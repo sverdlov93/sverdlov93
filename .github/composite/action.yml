@@ -15,7 +15,7 @@ runs:
   steps:
     - name: Setup JFrog CLI
       uses: jfrog/setup-jfrog-cli@v4
-      env:
+      with:
         JF_URL: ${{ inputs.artifactory-url }}
         JF_USER: ${{ inputs.artifactory-user }}
         JF_PASSWORD: ${{ inputs.artifactory-api-key }}
