@@ -18,6 +18,7 @@ jobs:
           artifactory-api-key: ${{ secrets.JF_PASSWORD }}
 
       - name: Run JFrog CLI
+        shell: bash
         run: |
           # Ping the server
           jf rt ping
