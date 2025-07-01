@@ -1,5 +1,7 @@
 name: "JFrog CLI Example"
-on: push
+on: 
+  push:
+  workflow_dispatch:
 
   
 jobs:
@@ -9,6 +11,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
+          # Setup FlyFrog registry with OIDC
+      - name: Setup FlyFrog Registry
+        uses: jfrog/flyfrog-action@v1
+        with:
+          url: https://flyfrog.example.com
+            
       - name: Setup JFrog CLI        
         uses: ./.github/composite
         with:
